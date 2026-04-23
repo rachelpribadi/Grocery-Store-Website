@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fresh and Daily</title>
+  <link rel="stylesheet" href="design.css">
+  <!-- Body text font -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Title / Heading font -->
+  <link href="https://fonts.googleapis.com/css2?family=TrebuchetMS:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css">
+
+
+</head>
+<body>
+
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="images/logo.webp" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <div class="cs-search">
+            <input
+                type="text"
+                placeholder="Search products"
+                aria-label="Search">
+            <span class="cs-search-icon">
+                <img src="images/search.webp" alt="Search">
+            </span>
+        </div>
+        <!--Navigation List-->
+        <nav class="cs-nav">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <span class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </span>
+            </button>
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Products
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            Promotions
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="" class="cs-li-link">
+                            My Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">
+            Cart (<span id="cartCount">0</span>)
+        </a>
+    </div>
+</header>
+                                
+<!-- ============================================ -->
+<!--                     Hero                     -->
+<!-- ============================================ -->
+
+<section id="hero-1946">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(min-width: 601px)" srcset="images/banner.webp">
+            <source media="(max-width: 600px)" srcset="images/banner.webp">
+            <img decoding="async" src="images/banner.webp" alt="construction site" width="1280" height="510">
+        </picture>
+
+        <div class="cs-content">
+            <h2 class="cs-title">Don’t miss our biggest grocery promotions this week!</h2>
+            <div class="cs-flex">
+                <p class="cs-text">Discover weekly deals on fresh Asian products and other everyday essentials, with new promotions added regularly</p>
+                <a href="" class="cs-button-solid">Shop Now</a>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="images/promo.webp" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Buy More, Get More</h3>
+                    <p class="cs-item-text">Buy 2, Get 1 Free on selected items! This applies to selected products only, and the lowest-priced item is free.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-icon-picture">
+                    <img class="cs-icon" src="images/card.webp" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <div class="cs-text-group">
+                    <h3 class="cs-h3">Extra Savings with Selected Cards</h3>
+                    <p class="cs-item-text">Get 10% off when you pay with selected credit cards! This is valid for selected banks only. Discount capped at $20 per transaction.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Collection                  -->
+<!-- ============================================ -->
+
+<section id="collection-1602">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Last Chance Deals for Today</h2>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="one">
+                    Weekly Groceries
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Quick Meals
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Snacks
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Frozen Food
+                </button>
+            </div>
+        </div>
+        <div class="cs-listing-wrapper">
+            <div class="cs-listing" data-category="one">
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/soysauce.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/soysauce.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/soysauce.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $5.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Sauces & Condiments</span>
+                            <h3 class="cs-name">Kikkoman Soy Sauce</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$5.00</span>
+                                    <span class="cs-was-price">$10.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="soy-sauce">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/tabasco.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/tabasco.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/tabasco.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $4.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Sauces & Condiments</span>
+                            <h3 class="cs-name">Tabasco Sauce</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$8.00</span>
+                                    <span class="cs-was-price">$12.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="tobasco-sauce">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/heinzketchup.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/heinzketchup.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/heinzketchup.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $2.50</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Sauce & Condiments</span>
+                            <h3 class="cs-name">Heinz Ketchup</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$2.00</span>
+                                    <span class="cs-was-price">$4.50</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="tomato-sauce">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/pringles.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/pringles.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/pringles.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $1.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Snacks & Sweets</span>
+                            <h3 class="cs-name">Pringles</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$2.50</span>
+                                    <span class="cs-was-price">$3.50</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="seaweed-crackers">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/ritzcracker.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/ritzcracker.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/ritzcracker.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $2.50</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Snacks & Sweets</span>
+                            <h3 class="cs-name">Ritz Crackers</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$1.50</span>
+                                    <span class="cs-was-price">$4.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="rice-crackers">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/wrcandy.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/wrcandy.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/wrcandy.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $4.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Snacks & Sweets</span>
+                            <h3 class="cs-name">White Rabbit Candy</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$6.00</span>
+                                    <span class="cs-was-price">$10.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="mochi">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/dumplings.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/dumplings.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/dumplings.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $3.50</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Frozen Food</span>
+                            <h3 class="cs-name">Frozen Pork Dumplings</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$8.50</span>
+                                    <span class="cs-was-price">$12.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="dumplings">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/springrolls.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/springrolls.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/springrolls.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $4.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Frozen Food</span>
+                            <h3 class="cs-name">Frozen Spring Rolls</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$6.00</span>
+                                    <span class="cs-was-price">$10.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="spring-rolls">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cs-item">
+                    <div class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)"
+                                        srcset="images/damame.webp">
+                                <source media="(min-width: 601px)"
+                                        srcset="images/edamame.webp">
+                                <img loading="lazy" decoding="async"
+                                        src="images/edamame.webp"
+                                        alt="gallery" width="305" height="400">
+                            </picture>
+                            <span class="cs-offer">SAVE $5.00</span>
+                        </div>
+                        <div class="cs-details">
+                            <span class="cs-category">Frozen Food</span>
+                            <h3 class="cs-name">Frozen Edamame</h3>
+                            <div class="cs-actions">
+                                <div class="cs-flex">
+                                    <span class="cs-price">$4.00</span>
+                                    <span class="cs-was-price">$9.00</span>
+                                </div>
+                                <div class="cs-cart-slot">
+                                    <button class="cs-buy" type="button" data-product-id="edamame">
+                                    Add to cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Recipe                     -->
+<!-- ============================================ -->
+
+<section id="blog-986">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">FRESH IDEAS FOR YOU</span>
+                <h2 class="cs-title">This Week’s Favourite Recipes to Try at Home</h2>
+            </div>
+            <a href="" class="cs-button-solid">View Recipes</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img decoding="async" src="images/chicken.webp" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Crispy Sweet and Sour Chicken</h3>
+                    <div class="cs-stars">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <span class="cs-rating">5.0 (17)</span>
+                    </div>
+                    <span class="cs-desc">
+                        Crispy battered chicken pieces coated in a glossy sweet and sour sauce.
+                    </span>
+                   <a href="#sweet-sour-chicken" class="cs-link" data-fancybox data-src="#sweet-sour-chicken">
+                       View Recipe
+                   </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img decoding="async" src="images/sushi.webp" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Classic Assorted Sushi Platter</h3>
+                    <div class="cs-stars">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <span class="cs-rating">5.0 (21)</span>
+                    </div>
+                    <span class="cs-desc">
+                        A tasty selection of classic sushi rolls made with fresh ingredients.
+                    </span>
+                   <a href="#sushi" class="cs-link" data-fancybox data-src="#sushi">
+                       View Recipe
+                   </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img decoding="async" src="images/xlb.webp" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Xiao Long Bao with Pork Filling</h3>
+                    <div class="cs-stars">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <span class="cs-rating">5.0 (10)</span>
+                    </div>
+                    <span class="cs-desc">
+                        Delicate steamed dumplings filled with juicy pork and rich savoury broth.
+                    </span>
+                   <a href="#xlb" class="cs-link" data-fancybox data-src="#xlb">
+                       View Recipe
+                   </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img decoding="async" src="images/friedrice.webp" alt="stylist" width="413" height="480">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">Chinese Fried Rice with Shrimp</h3>
+                    <div class="cs-stars">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <img class="cs-star"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/review-star.svg"
+                                alt="star" height="24" width="24" loading="lazy" decoding="async">
+                        <span class="cs-rating">5.0 (7)</span>
+                    </div>
+                    <span class="cs-desc">
+                        Wok-fried rice tossed with tender shrimp, eggs, and mixed vegetables.
+                    </span>
+                   <a href="#fried-rice" class="cs-link" data-fancybox data-src="#fried-rice">
+                       View Recipe
+                   </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-308">
+    <div class="cs-container">
+        <!-- Customer Services Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Customer Services</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Contact us</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Returns & Refunds</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Help Center</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Accessibility</a>
+            </li>
+        </ul>
+        <!-- Helpful Links Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Helpful Links</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Locations</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Stores near you</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">Gift Cards</a>
+            </li>
+        </ul>
+        <!-- Follow US ON Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">FOLLOW US ON</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/insta.webp" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone">freshanddaily</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/facebook.webp" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email">freshanddaily</a>
+            </li> 
+        </ul>
+        <!-- CONTACT US Info --> 
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">CONTACT US ON</span>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/phone.webp" alt="phone" width="24" height="24">
+                <a class="cs-nav-link cs-phone">(257) 432-8890</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/mail.webp" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email">freshanddaily@gmail.com</a>
+            </li>
+            <li class="cs-nav-li">
+                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="images/location.webp" alt="email" width="24" height="24">
+                <a class="cs-nav-link cs-email">Everly's Street, Melbourne, EV 170907</a>
+            </li>
+        </ul>
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="images/logo.webp" alt="logo" width="198" height="52">
+            </a>
+            <p class="cs-text">
+                Fresh & Daily acknowledges and respects Australia’s First Nations peoples as the Traditional Custodians of the Land upon which we operate our stores, distribution centres, and the national office. 
+            </p>
+        </div>
+    </div>
+    <div class="cs-bottom">
+        <span class="cs-copyright">© Copyright 2026 - <a class="cs-copyright-link" href="">Fresh & Daily Asian Grocer</a></span>
+    </div>
+</footer>
+
+<div id="sweet-sour-chicken" style="display:none; max-width:600px;">
+   <h2>Crispy Sweet and Sour Chicken</h2>
+   <h3>Ingredients</h3>
+   <ul>
+       <li>500g chicken breast, cut into bite-sized pieces</li>
+       <li>1 cup cornstarch</li>
+       <li>2 eggs, beaten</li>
+       <li>Oil for frying</li>
+       <li>1/2 cup sweet and sour sauce</li>
+       <li>1 bell pepper, chopped</li>
+       <li>1/2 onion, sliced</li>
+       <li>1/2 cup pineapple chunks</li>
+   </ul>
+
+   <h3>Instructions</h3>
+   <ol>
+       <li>Season chicken with salt and pepper.</li>
+       <li>Dip chicken in egg, then coat with cornstarch.</li>
+       <li>Deep-fry chicken until golden and crispy.</li>
+       <li>Stir-fry vegetables and pineapple briefly.</li>
+       <li>Add sauce and chicken, toss well and serve.</li>
+   </ol>
+</div>
+
+<div id="sushi" style="display:none; max-width:600px;">
+   <h2>Classic Assorted Sushi Platter</h2>
+   <h3>Ingredients</h3>
+   <ul>
+       <li>2 cups sushi rice</li>
+       <li>2 1/2 cups water</li>
+       <li>3 tbsp rice vinegar</li>
+       <li>1 tbsp sugar</li>
+       <li>1 tsp salt</li>
+       <li>Nori sheets</li>
+       <li>Assorted fillings (salmon, tuna, cucumber, avocado)</li>
+   </ul>
+
+   <h3>Instructions</h3>
+   <ol>
+       <li>Cook rice and let cool slightly.</li>
+       <li>Mix vinegar, sugar, and salt into rice.</li>
+       <li>Spread rice over nori sheets.</li>
+       <li>Add fillings and roll tightly.</li>
+       <li>Slice and arrange on a platter.</li>
+   </ol>
+</div>
+
+<div id="xlb" style="display:none; max-width:600px;">
+   <h2>Xiao Long Bao with Pork Filling</h2>
+   <h3>Ingredients</h3>
+   <ul>
+       <li>250g ground pork</li>
+       <li>1 tbsp soy sauce</li>
+       <li>1 tsp sesame oil</li>
+       <li>1 tsp grated ginger</li>
+       <li>1 tbsp chopped spring onions</li>
+       <li>Dumpling wrappers</li>
+       <li>1/2 cup pork gelatin stock (chilled)</li>
+   </ul>
+
+   <h3>Instructions</h3>
+   <ol>
+       <li>Mix pork with soy sauce, sesame oil, ginger, and spring onions.</li>
+       <li>Fold in chilled gelatin cubes gently.</li>
+       <li>Place filling into dumpling wrappers.</li>
+       <li>Pleat and seal the edges.</li>
+       <li>Steam for 8–10 minutes and serve hot.</li>
+   </ol>
+</div>
+
+<div id="fried-rice" style="display:none; max-width:600px;">
+   <h2>Chinese Fried Rice with Shrimp</h2>
+   <h3>Ingredients</h3>
+   <ul>
+       <li>2 cups cooked jasmine rice (cold)</li>
+       <li>200g shrimp, peeled and deveined</li>
+       <li>2 eggs, beaten</li>
+       <li>2 cloves garlic, minced</li>
+       <li>1/2 cup mixed vegetables</li>
+       <li>2 tbsp soy sauce</li>
+       <li>1 tbsp cooking oil</li>
+   </ul>
+
+   <h3>Instructions</h3>
+   <ol>
+       <li>Heat oil and cook shrimp until pink, then set aside.</li>
+       <li>Stir-fry garlic until fragrant.</li>
+       <li>Add eggs and scramble lightly.</li>
+       <li>Add rice and vegetables, stir-fry well.</li>
+       <li>Return shrimp, add soy sauce, toss and serve.</li>
+   </ol>
+</div>
+
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>                              
+   
+                             
+                                
+                                
